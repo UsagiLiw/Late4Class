@@ -2,10 +2,13 @@
     <string name="app_name">Late4Class</string>
     <string name="welcome_1">WELCOME!</string>
     <string name="welcome_2">to</string>
-    <string name="intro">Simple, interactive and convenient class management system</string>
+    <string name="intro1">Simple, interactive and convenient</string>
+    <string name="intro2">class management system</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
     <string name="rememberme">Remember me</string>
     <string name="forgot">Forgot password?</string>
+    <string name="noaccount">Haven\'t got an account yet?</string>
+    <string name="signup">Sign Up</string>
 </resources>

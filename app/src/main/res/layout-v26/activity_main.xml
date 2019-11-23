@@ -19,7 +19,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.47000003"></ImageView>
+        app:layout_constraintVertical_bias="0.47000003"/>
 
     <EditText
         android:id="@+id/email_fill"
@@ -75,13 +75,13 @@
 
     <Button
         android:id="@+id/button_login"
-        android:layout_width="309dp"
+        android:layout_width="0dp"
         android:layout_height="56dp"
         android:layout_marginStart="42dp"
         android:layout_marginLeft="42dp"
+        android:layout_marginTop="42dp"
         android:layout_marginEnd="42dp"
         android:layout_marginRight="42dp"
-        android:layout_marginBottom="56dp"
         android:background="@drawable/login_button"
         android:text="@string/login"
         android:textAllCaps="false"
@@ -116,15 +116,15 @@
         style="@android:style/Widget.CompoundButton.CheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="42dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="239dp"
         android:text="@string/rememberme"
         android:textSize="12sp"
         android:textStyle="bold"
         android:typeface="normal"
         app:layout_constraintBottom_toTopOf="@+id/button_login"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password_fill" />
 
@@ -132,6 +132,7 @@
         android:id="@+id/forgot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
         android:layout_marginBottom="79dp"
         android:clickable="true"
         android:focusable="true"
