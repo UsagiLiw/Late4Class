@@ -12,22 +12,24 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".welcome"
-            android:theme="@style/LoginPage">
+            android:theme="@style/LoginPage"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".Dashboard"
+            android:theme="@style/DashBoard"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
         <activity
-            android:name=".dashboard"
-            android:theme="@style/DashBoard">
-        </activity>
-
-        <activity
             android:name=".MainActivity"
-            android:theme="@style/LoginPage">
+            android:theme="@style/LoginPage"
+            android:screenOrientation="portrait">
         </activity>
 
     </application>
