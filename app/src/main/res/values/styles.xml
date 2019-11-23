@@ -27,4 +27,17 @@
         <item name="colorControlActivated">@color/textColor_White</item> <!-- activated color change as you wish -->
         <item name="android:textColor">@color/textColor_White</item> <!-- checkbox text color -->
     </style>
+
+    <style name="Reminder" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/buttonColor_pink</item>
+        <item name="colorPrimaryDark">@color/buttonColor_pink</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="addReminder" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/buttonColor_pink</item>
+        <item name="colorPrimaryDark">@color/buttonColor_pink</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
 </resources>

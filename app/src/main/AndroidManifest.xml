@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.late4class">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,6 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".addReminder"
+            android:label="@string/addReminder_title"
+            android:theme="@style/addReminder">
+        </activity>
+        <activity
+            android:name=".reminder"
+            android:label="@string/reminder_title"
+            android:theme="@style/Reminder"></activity>
         <activity
             android:name=".welcome"
             android:theme="@style/LoginPage">
@@ -19,17 +29,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".dashboard"
-            android:theme="@style/DashBoard">
-        </activity>
-
+            android:theme="@style/DashBoard" />
         <activity
             android:name=".MainActivity"
-            android:theme="@style/LoginPage">
-        </activity>
-
+            android:theme="@style/LoginPage" />
     </application>
 
 </manifest>

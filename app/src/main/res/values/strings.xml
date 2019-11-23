@@ -11,4 +11,6 @@
     <string name="forgot">Forgot password?</string>
     <string name="noaccount">Haven\'t got an account yet?</string>
     <string name="signup">Sign Up</string>
+    <string name="reminder_title">Reminder</string>
+    <string name="addReminder_title">Add Reminder</string>
 </resources>
