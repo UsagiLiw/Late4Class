@@ -113,6 +113,9 @@
         android:layout_marginRight="42dp"
         android:layout_marginBottom="106dp"
         android:background="@drawable/welcome_button"
+        android:shadowColor="#000000"
+        android:shadowDx="20"
+        android:shadowDy="80"
         android:text="@string/login"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="25sp"
@@ -139,13 +142,13 @@
         android:textStyle="bold"
         app:fontFamily="@font/calibri_bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/signup_text_button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcome_login_button"
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/signup_text_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"

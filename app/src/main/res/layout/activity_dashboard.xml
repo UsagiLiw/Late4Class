@@ -10,7 +10,7 @@
         android:id="@+id/textWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="WELCOME!"
+        android:text="@string/welcome_1"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/textColor_White"
         android:textSize="25sp"
@@ -37,7 +37,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.1" />
 
-    //button1
+    <!--button1-->
     <Button
         android:id="@+id/button"
         android:layout_width="100dp"
