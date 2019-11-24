@@ -17,7 +17,7 @@
         </activity>
 
         <activity
-            android:name=".Dashboard"
+            android:name=".Dashboard_pack.Dashboard"
             android:theme="@style/DashBoard"
             android:screenOrientation="portrait">
             <intent-filter>

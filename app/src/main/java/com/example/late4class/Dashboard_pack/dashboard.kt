@@ -1,35 +1,12 @@
-package com.example.late4class
+package com.example.late4class.Dashboard_pack
 
-import android.content.Intent
 import android.os.Bundle
-import android.util.Log
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_dashboard.*
 import android.widget.Toast
-import com.google.firebase.FirebaseError
-import com.google.firebase.database.*
+import com.example.late4class.R
 
 class Dashboard : AppCompatActivity() {
-
-    private lateinit var firebase: DatabaseReference
-
-    override fun onStart() {
-        super.onStart()
-
-        firebase = FirebaseDatabase.getInstance().reference
-        val uName = firebase.child("testText")
-        uName.addListenerForSingleValueEvent(object : ValueEventListener {
-            override
-            fun onCancelled(error: FirebaseError?) {
-                println(error!!.message)
-            }
-
-            override fun onDataChange(snapshot: DataSnapshot?) {
-                val children = snapshot!!.children
-            }
-        })
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
