@@ -11,4 +11,9 @@
     <string name="forgot">Forgot password?</string>
     <string name="noaccount">Haven\'t got an account yet?</string>
     <string name="signup">Sign Up</string>
+    <string name="createaccount">Create Account</string>
+    <string name="firstname">First name</string>
+    <string name="lastname">Last name</string>
+    <string name="confirmpass">Confirm Password</string>
+
 </resources>

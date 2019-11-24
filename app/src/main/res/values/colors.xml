@@ -6,4 +6,5 @@
     <color name="textColor_White">#FFFFFF</color>
     <color name="buttonColor_pink">#F3334D</color>
     <color name="buttonColor_green">#66C266</color>
+    <color name="hintColor_gray">#9A9999</color>
 </resources>
