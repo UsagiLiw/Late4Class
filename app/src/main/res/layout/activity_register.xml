@@ -12,10 +12,10 @@
         android:layout_height="56dp"
         android:layout_marginStart="42dp"
         android:layout_marginLeft="42dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="31dp"
         android:layout_marginEnd="42dp"
         android:layout_marginRight="42dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="50dp"
         android:background="@drawable/welcome_button"
         android:shadowColor="#000000"
         android:shadowDx="20"
@@ -34,7 +34,7 @@
         android:id="@+id/createTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="25dp"
         android:text="@string/createaccount"
         android:textColor="@color/textColor_White"
         android:textSize="30sp"
@@ -56,6 +56,7 @@
         android:background="@drawable/login_fill"
         android:ems="10"
         android:hint="@string/firstname"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:padding="15dp"
         android:textColor="@color/buttonColor_pink"
@@ -64,10 +65,8 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/lastName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/FirstName"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/FirstName" />
 
     <TextView
         android:id="@+id/FirstName"
@@ -147,6 +146,7 @@
         android:background="@drawable/login_fill"
         android:ems="10"
         android:hint="@string/lastname"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:padding="15dp"
         android:textColor="@color/buttonColor_pink"
@@ -155,10 +155,8 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/email"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lastName"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/lastName" />
 
     <EditText
         android:id="@+id/regis_email"
