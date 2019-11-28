@@ -5,10 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_dashboard.*
 import android.widget.Toast
-import com.example.late4class.R
-import com.example.late4class.asUser
-import com.example.late4class.timeTable
-import com.example.late4class.userInfo
+import com.example.late4class.*
 import com.example.late4class.utils.ValueListenerAdapter
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
@@ -42,6 +39,14 @@ class Dashboard : AppCompatActivity(){
                 textUname.setText(mUser.fName)
             }
         )
+        fun signingOut(){
+            mAuth.signOut()
+            mAuth.addAuthStateListener {
+                if(mAuth.currentUser==null){
+                    this.finish()
+                }
+            }
+        }
 
         button.setOnClickListener {
             val intentTimetable = Intent(this, timeTable::class.java)
@@ -63,7 +68,8 @@ class Dashboard : AppCompatActivity(){
             Toast.makeText(this, "Activity not yet implement", Toast.LENGTH_LONG).show()
         }
         button7.setOnClickListener{
-            Toast.makeText(this, "Activity not yet implement", Toast.LENGTH_LONG).show()
+            signingOut()
+            Toast.makeText(this, "User signing out", Toast.LENGTH_SHORT).show()
         }
 
     }
