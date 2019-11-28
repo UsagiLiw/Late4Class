@@ -81,6 +81,6 @@ class register : AppCompatActivity() {
     }
 
     private fun makeUser (fName : String, lName : String, email: String) : userInfo.User {
-        return userInfo.User(fName = fName, lName = lName, email = email)
+        return userInfo.User(fname = fName, lname = lName, email = email)
     }
 }
