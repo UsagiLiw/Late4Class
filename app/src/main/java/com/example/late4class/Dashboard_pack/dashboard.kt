@@ -39,7 +39,7 @@ class Dashboard : AppCompatActivity(){
         currentUserReference().addListenerForSingleValueEvent(
             ValueListenerAdapter{
                 mUser = it.asUser()!!
-                textUname.setText(mUser.fName)
+                textUname.setText(mUser.fname)
             }
         )
 
