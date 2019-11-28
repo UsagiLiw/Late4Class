@@ -22,5 +22,6 @@
     <string name="announcement">Announcement</string>
     <string name="profile">Profile</string>
     <string name="setting">Settings</string>
+    <string name="register">Register</string>
 
 </resources>
