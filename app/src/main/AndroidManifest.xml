@@ -14,13 +14,7 @@
         <activity
             android:name=".welcome"
             android:screenOrientation="portrait"
-            android:theme="@style/LoginPage">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:theme="@style/LoginPage"/>
         <activity
             android:name=".Dashboard_pack.Dashboard"
             android:screenOrientation="portrait"
@@ -34,6 +28,17 @@
             android:screenOrientation="portrait"
             android:label="@string/timetable"
             android:theme="@style/TimeTableTheme"/>
+        <activity
+            android:name=".register"
+            android:screenOrientation="portrait"
+            android:label="@string/register"
+            android:theme="@style/LoginPage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
