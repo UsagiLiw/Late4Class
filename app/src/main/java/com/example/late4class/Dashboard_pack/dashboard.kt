@@ -1,19 +1,51 @@
 package com.example.late4class.Dashboard_pack
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_dashboard.*
 import android.widget.Toast
 import com.example.late4class.R
+import com.example.late4class.asUser
+import com.example.late4class.timeTable
+import com.example.late4class.userInfo
+import com.example.late4class.utils.ValueListenerAdapter
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
-class Dashboard : AppCompatActivity() {
+
+import java.util.*
+import kotlin.collections.ArrayList
+
+class Dashboard : AppCompatActivity(){
+
+    private val TAG = "ProfileActivity"
+    private lateinit var  mUser: userInfo.User
+    private lateinit var  mAuth: FirebaseAuth
+    private lateinit var  mDatabase: DatabaseReference
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
 
-        button.setOnClickListener{
-            Toast.makeText(this, "Activity not yet implement", Toast.LENGTH_LONG).show()
+        mAuth = FirebaseAuth.getInstance()
+        mDatabase = FirebaseDatabase.getInstance().reference
+
+        fun currentUserReference(): DatabaseReference =
+            mDatabase.child("users").child(mAuth.currentUser!!.uid)
+
+        currentUserReference().addListenerForSingleValueEvent(
+            ValueListenerAdapter{
+                mUser = it.asUser()!!
+                textUname.setText(mUser.fName)
+            }
+        )
+
+        button.setOnClickListener {
+            val intentTimetable = Intent(this, timeTable::class.java)
+            startActivity(intentTimetable)
         }
         button2.setOnClickListener{
             Toast.makeText(this, "Activity not yet implement", Toast.LENGTH_LONG).show()
@@ -35,4 +67,5 @@ class Dashboard : AppCompatActivity() {
         }
 
     }
+
 }

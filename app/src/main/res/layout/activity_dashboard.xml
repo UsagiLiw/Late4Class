@@ -66,7 +66,7 @@
         android:id="@+id/timetable"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Timetable"
+        android:text="@string/timetable"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/textColor_White"
         android:textSize="15sp"
@@ -79,7 +79,8 @@
         app:layout_constraintTop_toBottomOf="@+id/button"
         app:layout_constraintVertical_bias="0.016" />
 
-    //button2
+    <!--button2-->
+
     <Button
         android:id="@+id/button2"
         android:layout_width="100dp"
@@ -107,7 +108,7 @@
         android:id="@+id/Class"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Class"
+        android:text="@string/_class"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/textColor_White"
         android:textSize="15sp"
@@ -119,8 +120,7 @@
         app:layout_constraintStart_toStartOf="@+id/button2"
         app:layout_constraintTop_toBottomOf="@+id/button2"
         app:layout_constraintVertical_bias="0.016" />
-
-    //button3
+<!--Button 3-->
     <Button
         android:id="@+id/button3"
         android:layout_width="100dp"
@@ -149,7 +149,7 @@
         android:id="@+id/Reminder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Reminder"
+        android:text="@string/reminder"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/textColor_White"
         android:textSize="15sp"
@@ -162,7 +162,7 @@
         app:layout_constraintTop_toBottomOf="@+id/button3"
         app:layout_constraintVertical_bias="0.016" />
 
-    //button4
+<!--button4-->
     <Button
         android:id="@+id/button4"
         android:layout_width="100dp"
@@ -204,7 +204,7 @@
         app:layout_constraintTop_toBottomOf="@+id/button4"
         app:layout_constraintVertical_bias="0.016" />
 
-    //button5
+   <!-- button5-->
     <Button
         android:id="@+id/button5"
         android:layout_width="100dp"
@@ -233,7 +233,7 @@
         android:id="@+id/Announcement"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Announcement"
+        android:text="@string/announcement"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/textColor_White"
         android:textSize="15sp"
@@ -246,7 +246,7 @@
         app:layout_constraintTop_toBottomOf="@+id/button5"
         app:layout_constraintVertical_bias="0.016" />
 
-    //button6
+<!--button6-->
     <Button
         android:id="@+id/button6"
         android:layout_width="100dp"
@@ -275,7 +275,7 @@
         android:id="@+id/Profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Profile"
+        android:text="@string/profile"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/textColor_White"
         android:textSize="15sp"
@@ -288,7 +288,7 @@
         app:layout_constraintTop_toBottomOf="@+id/button6"
         app:layout_constraintVertical_bias="0.016" />
 
-    //button7
+<!--    //button7-->
 
     <Button
         android:id="@+id/button7"
@@ -318,7 +318,7 @@
         android:id="@+id/Setting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Setting"
+        android:text="@string/setting"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/textColor_White"
         android:textSize="15sp"

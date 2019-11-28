@@ -23,8 +23,10 @@
     </style>
 
     <style name="MyCheckBox" parent="Theme.AppCompat.NoActionBar">
-        <item name="colorControlNormal">@color/buttonColor_pink</item>   <!-- normal border color change as you wish -->
-        <item name="colorControlActivated">@color/textColor_White</item> <!-- activated color change as you wish -->
+        <item name="colorControlNormal">@color/buttonColor_pink
+        </item>   <!-- normal border color change as you wish -->
+        <item name="colorControlActivated">@color/textColor_White
+        </item> <!-- activated color change as you wish -->
         <item name="android:textColor">@color/textColor_White</item> <!-- checkbox text color -->
     </style>
 
@@ -34,10 +36,26 @@
         <item name="colorPrimaryDark">@color/buttonColor_pink</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
     <style name="addReminder" parent="Theme.AppCompat">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/buttonColor_pink</item>
         <item name="colorPrimaryDark">@color/buttonColor_pink</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="TimeTableTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
