@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_dashboard.*
 import android.widget.Toast
 import com.example.late4class.*
+import com.example.late4class.Class_module.ClassList
 import com.example.late4class.utils.ValueListenerAdapter
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
@@ -53,7 +54,8 @@ class Dashboard : AppCompatActivity(){
             startActivity(intentTimetable)
         }
         button2.setOnClickListener{
-            Toast.makeText(this, "Activity not yet implement", Toast.LENGTH_LONG).show()
+            val intentClassList = Intent(this, ClassList::class.java)
+            startActivity(intentClassList)
         }
         button3.setOnClickListener{
             Toast.makeText(this, "Activity not yet implement", Toast.LENGTH_LONG).show()

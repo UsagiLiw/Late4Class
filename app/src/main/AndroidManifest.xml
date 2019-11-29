@@ -11,10 +11,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Class_module.ClassList"
+            android:screenOrientation="portrait"
+            android:theme="@style/DashBoard"/>
         <activity
             android:name=".welcome"
             android:screenOrientation="portrait"
-            android:theme="@style/LoginPage"/>
+            android:theme="@style/LoginPage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".Dashboard_pack.Dashboard"
             android:screenOrientation="portrait"
@@ -25,20 +34,14 @@
             android:theme="@style/LoginPage" />
         <activity
             android:name=".timeTable"
-            android:screenOrientation="portrait"
             android:label="@string/timetable"
-            android:theme="@style/TimeTableTheme"/>
+            android:screenOrientation="portrait"
+            android:theme="@style/TimeTableTheme" />
         <activity
             android:name=".register"
-            android:screenOrientation="portrait"
             android:label="@string/register"
-            android:theme="@style/LoginPage">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginPage" />
     </application>
 
 </manifest>

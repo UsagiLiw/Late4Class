@@ -23,5 +23,6 @@
     <string name="profile">Profile</string>
     <string name="setting">Settings</string>
     <string name="register">Register</string>
-
+    <string name="ClassGroup">Class Group</string>
+    <string name="btnJoinClass">join class button</string>
 </resources>
